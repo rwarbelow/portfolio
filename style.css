@@ -1,7 +1,60 @@
 body {
-  background: #aa88ff;
+  background: orange;
 }
 
-h1 {
-  color: orange;
+.ghost-container {
+  width: 100px;
+  animation: float 10s linear infinite;
+}
+
+@keyframes float {
+  16.6% {
+    transform: translate(80px, 80px)
+  }
+  33.2% {
+    
+  }
+}
+
+
+
+
+.ghost-body {
+  background: white;
+  height: 120px;
+  border-radius: 50% 50% 0% 0%;
+  text-align: center;
+}
+
+.flap {
+  background: white;
+  height: 15px;
+  width: 30.6%;
+  display: inline-block;
+  border-radius: 0% 0% 50% 50%;
+  animation: wiggle 1s linear infinite;
+}
+
+@keyframes wiggle {
+  25% {
+    border-radius: 0% 0% 80% 20%;
+  }
+  75% {
+    border-radius: 0% 0% 20% 80%;
+  }
+}
+
+.eyeball {
+  background: black;
+  height: 20px;
+  width: 15px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.hidden {
+  opacity: 0;
 }
